@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<title>Bulb test</title>
+</head>
+<body>
+<script>
+function check(value)
+{
+	var light;
+	if(value == 0)
+	{
+		light="Bulb OFF.jpg";
+	}
+	else
+	{
+		light="Bulb ON.jpg";
+	}
+	document.getElementById("Bulb").src=light;
+}	
+</script>
+
+<img id="Bulb" src="Bulb OFF.jpg">
+ 
+<br>
+<button onclick="check(1)">Turn ON</button>
+<button onclick="check(0)">Turn OFF</button>
+</body>
+</html>
